@@ -25,9 +25,11 @@ public class Factorial {
 			
 		}while(number<=0);
 		
+		/////////////////////////////////////
+		//se asigna la funcion de factorial a la variable
 		factorial =GiveFactorial(number);
-		System.out.println("El factorial es: "+factorial);
-		
+		//System.out.println("El factorial del numero "+number+" es "+factorial+"\nya que se a multiplicado por el numero por sí mismo");
+		System.out.println(String.format("The format of %d is: %d, which is gotten by multipling several times %d", number,factorial,number));
 
 	}
 	
@@ -37,7 +39,7 @@ public class Factorial {
 	public static long GiveFactorial(int n) {
 		int factorial=1;
 		
-		for(int i=1;i<n;i++)
+		for(int i=1;i<=n;i++)
 		{
 			factorial=factorial*i;
 		}
